@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.container > h1 {
+  font-size: 35px;
+  text-align: center;
+  padding: 15px;
+}
+
+.todo__list__container {
+  width: 100%;
+  max-width: 900px;
+  min-height: 500px;
+  background-color: gray;
+  margin: 40px auto;
+  color: white;
+}
+
+.input__field__container {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(227, 226, 226);
+  overflow: hidden;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input__field__container > input {
+  width: 88%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+}
+
+.input__field__container > button {
+  width: 10%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input__field__container > button:hover {
+  border: 1px solid black;
+}
+
+.todo__content__container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}
+
+.todo__content__container:hover {
+  background-color: green;
+}
+
+.todo__content__container > :nth-child(1) {
+  font-size: 15px;
+  font-style: italic;
+  width: 68%;
+}
+.todo__content__container > :nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 30%;
+}
+
+.edit__delete > :nth-child(1) {
+  width: 47%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: orange;
+  cursor: pointer;
+}
+.edit__delete > :nth-child(2) {
+  width: 47%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  cursor: pointer;
+}
